@@ -1,4 +1,3 @@
-'use strict';
 const data_container = document.getElementById('foods');
 const searchBtn = document.getElementById('searchBtn');
 const warning = document.getElementById('warning');
@@ -10,7 +9,7 @@ searchBtn.addEventListener('click', function () {
     if (keyword === '') {
         warning.style.display = 'block';
     } else {
-        FoodList(keyword);
+        FoodList(keyword)
         warning.style.display = 'none';
     }
 });
